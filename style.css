@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+a{
+    color: white;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)),url(/images/pexels-momo-king-5409015.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  transition: 0.5s ease;
+}
+.btn-sign{
+  background-color:#c5090e;
+  border: 2px solid #c5090e;
+
+}
+.btn-sign:hover{
+  background-color:#101010;
+}
+.btn-more{
+  border: 2px solid #c5090e;
+  margin-left: 2rem;
+}
+.btn-more:hover{
+  background-color: #101010;
+}
