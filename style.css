@@ -11,10 +11,10 @@ h1 {
   letter-spacing: 1px;
   word-spacing: 1px;
 }
-a{
-    color: white;
+a {
+  color: white;
 }
-li{
+li {
   color: white;
   cursor: pointer;
   text-transform: uppercase;
@@ -24,41 +24,42 @@ li a {
   text-decoration: none;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)),url(/images/pexels-momo-king-5409015.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/pexels-momo-king-5409015.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
 /* Navbar */
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 0.5rem;
 }
-.logo{
+.logo {
   flex: 1 1 40px;
   padding-left: 5rem;
 }
-.nav-links{
+.nav-links {
   flex: 1 1 40px;
 }
-.nav-links ul{
+.nav-links ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
 }
 .nav-links ul li a:link,
-.nav-links ul li a:visited{
+.nav-links ul li a:visited {
   padding: 0.4rem 0rem;
   color: #ffffff;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s;
 }
 .nav-links ul li a:hover,
-.nav-links ul li a:active{
+.nav-links ul li a:active {
   border-bottom: 2px solid #c5090e;
 }
 .hero-text {
@@ -70,7 +71,7 @@ nav{
   width: 90%;
   margin: auto;
 }
-.btn{
+.btn {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -79,46 +80,45 @@ nav{
   margin-top: 1rem;
   transition: 0.5s ease;
 }
-.btn-sign{
-  background-color:#c5090e;
+.btn-sign {
+  background-color: #c5090e;
   border: 2px solid #c5090e;
-
 }
-.btn-sign:hover{
-  background-color:#101010;
+.btn-sign:hover {
+  background-color: #101010;
 }
-.btn-more{
+.btn-more {
   border: 2px solid #c5090e;
   margin-left: 2rem;
 }
-.btn-more:hover{
+.btn-more:hover {
   background-color: #101010;
 }
 
 /* Features section  */
-.section-features{
+.section-features {
   width: 85%;
   margin: auto;
 }
-.features{
+.features {
   display: flex;
   gap: 3rem;
 }
-.row{
+.row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3rem 0rem;
 }
-.row h2{
+.row h2 {
   line-height: 40px;
   font-size: 2.5rem;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
 }
-.row h2::after{
+.row h2::after {
   display: block;
   height: 2px;
   background-color: #c5090e;
@@ -127,11 +127,11 @@ nav{
   margin: 0 auto;
   margin-top: 1rem;
 }
-.row h2 span{
+.row h2 span {
   font-size: 0.5rem;
   font-style: italic;
 }
-.row p{
+.row p {
   text-align: center;
   font-size: 1.1rem;
   line-height: 25px;
@@ -139,18 +139,105 @@ nav{
   margin-top: 2rem;
 }
 /* BOX  */
-.inv-features h3{
+.inv-features h3 {
   text-transform: uppercase;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
-.inv-features p{
+.inv-features p {
   font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
 }
-.inv-features i{
-  font-size: 3rem;
+.inv-features i {
+  font-size: 2.8rem;
   padding: 1rem 0rem;
   color: #c5090e;
 }
+
+/* Image gallery  */
+.photos {
+  padding-top: 5rem;
+}
+.photos-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.photos-head h2 {
+  font-weight: normal;
+  color: #101010;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 2rem 0rem 1rem 0rem;
+}
+.photos-head p {
+  color: #c5090e;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  text-align: center;
+  padding: 0rem 0rem 3rem 0rem;
+}
+.images {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+}
+.images img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.images img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* How it works  */
+.process-body{
+  display: flex;
+  justify-content: flex-end;
+}
+.process-img{
+  padding-right: 3rem;
+}
+.process-img img{
+  height: 70vh;
+}
+.process-features{
+  padding: 0rem 3rem;
+}
+.works-process{
+padding-bottom: 2rem;
+display: flex;
+align-items: center;
+}
+.sn{
+  display: inline-block;
+  padding-bottom: 1rem;
+  color: #c5090e;
+  font-size: 2rem;
+  padding-right: 1rem;
+  width: 50px;
+  border: 2px solid #c5090e;
+  text-align: center;
+  border-radius: 50px;
+  padding: 5px;
+}
+.works-process p{
+  width: 70%;
+  padding-left: 1rem;
+}
+.process-features:last-child{
+  padding-top: 3rem;
+}
+a img{
+  width: 250px;
+}
+
+
+
+
